@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Uej-Fi-dpZ">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--购彩大厅-->
+        <scene sceneID="oQY-CW-2fM">
+            <objects>
+                <tableViewController id="Jf7-3o-3E0" customClass="CZHallController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Oo5-1l-6z0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="xyz-RB-9HS">
+                                <rect key="frame" x="0.0" y="92" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xyz-RB-9HS" id="9Ko-ZY-8Tx">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Jf7-3o-3E0" id="kcA-RT-0LV"/>
+                            <outlet property="delegate" destination="Jf7-3o-3E0" id="Zjm-yT-OHL"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="购彩大厅" id="kjb-Uf-ovA">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="akq-CA-hOK">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="hbG-l1-Yk9">
+                                <rect key="frame" x="16" y="4" width="63" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="CS50_activity_image"/>
+                                <connections>
+                                    <action selector="clickActivity:" destination="Jf7-3o-3E0" eventType="touchUpInside" id="XIJ-lv-SPQ"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="cAJ-L2-84V">
+                            <connections>
+                                <segue destination="F9t-RZ-ojB" kind="push" id="BGQ-qA-fit"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GI2-g4-hUC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="199" y="285"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="xgv-9n-Ksl">
+            <objects>
+                <viewController id="F9t-RZ-ojB" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ywH-OX-ZCt"/>
+                        <viewControllerLayoutGuide type="bottom" id="y46-uy-ZWe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2aj-pp-djs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="k05-Ir-K60"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GuX-v3-Nld" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="597" y="285"/>
+        </scene>
+        <!--Nav Controller-->
+        <scene sceneID="QyE-l2-CKt">
+            <objects>
+                <navigationController id="Uej-Fi-dpZ" customClass="CZNavController" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dcv-W2-cLq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Jf7-3o-3E0" kind="relationship" relationship="rootViewController" id="bJl-E2-EmR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4w2-nh-0zm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-257" y="275"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="CS50_activity_image" width="63" height="36"/>
+    </resources>
+</document>

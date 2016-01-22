@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="nRg-Ci-1Dn">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Test Nav Controller-->
+        <scene sceneID="2AY-Dw-PAf">
+            <objects>
+                <navigationController id="nRg-Ci-1Dn" customClass="CZTestNavController" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="auA-ai-GMz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="xfy-7m-rNu" kind="relationship" relationship="rootViewController" id="qEt-at-DWA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vNV-cm-EkT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-253.86666666666667" y="300.09333333333331"/>
+        </scene>
+        <!--幸运选号控制器-->
+        <scene sceneID="73k-nQ-UuA">
+            <objects>
+                <viewController id="xfy-7m-rNu" userLabel="幸运选号控制器" customClass="CZLuckyController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Nk4-g4-fWf"/>
+                        <viewControllerLayoutGuide type="bottom" id="bME-9y-IJX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bbi-Go-oPi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="luck_entry_background" translatesAutoresizingMaskIntoConstraints="NO" id="Lyg-yM-Oy7" userLabel="背景图">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lucky_entry_light0" translatesAutoresizingMaskIntoConstraints="NO" id="iMF-Dv-q3c" userLabel="彩灯">
+                                <rect key="frame" x="45" y="98" width="231" height="29"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MW3-L0-lQg">
+                                <rect key="frame" x="175" y="246" width="130" height="139"/>
+                                <state key="normal" image="luck_entry_lots_button_normal"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x1I-VA-eEe">
+                                <rect key="frame" x="165" y="395" width="130" height="139"/>
+                                <state key="normal" image="luck_entry_roulette_button_normal"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nOM-8Y-mCR">
+                                <rect key="frame" x="25" y="246" width="130" height="139"/>
+                                <state key="normal" image="luck_entry_birthday_button_normal"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C2Z-6M-RsY">
+                                <rect key="frame" x="25" y="395" width="130" height="139"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="8ZQ-pb-Lxv"/>
+                                    <constraint firstAttribute="height" constant="139" id="ejB-x0-Dvg"/>
+                                </constraints>
+                                <state key="normal" image="luck_entry_number_button_normal"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="C2Z-6M-RsY" firstAttribute="trailing" secondItem="bbi-Go-oPi" secondAttribute="centerX" constant="-5" id="40T-u0-Pgt"/>
+                            <constraint firstItem="C2Z-6M-RsY" firstAttribute="width" secondItem="nOM-8Y-mCR" secondAttribute="width" id="7xM-Ir-uGD"/>
+                            <constraint firstItem="Lyg-yM-Oy7" firstAttribute="top" secondItem="bbi-Go-oPi" secondAttribute="top" constant="64" id="8wz-XV-86x"/>
+                            <constraint firstItem="x1I-VA-eEe" firstAttribute="width" secondItem="nOM-8Y-mCR" secondAttribute="width" id="CJh-An-pym"/>
+                            <constraint firstItem="MW3-L0-lQg" firstAttribute="height" secondItem="nOM-8Y-mCR" secondAttribute="height" id="DaG-4a-0Yb"/>
+                            <constraint firstAttribute="trailing" secondItem="Lyg-yM-Oy7" secondAttribute="trailing" id="EgH-j2-ycw"/>
+                            <constraint firstItem="x1I-VA-eEe" firstAttribute="bottom" secondItem="C2Z-6M-RsY" secondAttribute="bottom" id="P8T-bN-vC0"/>
+                            <constraint firstItem="C2Z-6M-RsY" firstAttribute="leading" secondItem="nOM-8Y-mCR" secondAttribute="leading" id="PId-rw-nZk"/>
+                            <constraint firstItem="C2Z-6M-RsY" firstAttribute="height" secondItem="nOM-8Y-mCR" secondAttribute="height" id="QS8-Th-IVI"/>
+                            <constraint firstItem="MW3-L0-lQg" firstAttribute="bottom" secondItem="nOM-8Y-mCR" secondAttribute="bottom" id="T00-iO-Cnb"/>
+                            <constraint firstItem="MW3-L0-lQg" firstAttribute="width" secondItem="nOM-8Y-mCR" secondAttribute="width" id="W2M-A1-G3b"/>
+                            <constraint firstItem="iMF-Dv-q3c" firstAttribute="top" secondItem="Nk4-g4-fWf" secondAttribute="bottom" constant="34" id="XZ3-tT-629"/>
+                            <constraint firstItem="bME-9y-IJX" firstAttribute="top" secondItem="Lyg-yM-Oy7" secondAttribute="bottom" id="boV-99-UGk"/>
+                            <constraint firstItem="bME-9y-IJX" firstAttribute="top" secondItem="C2Z-6M-RsY" secondAttribute="bottom" constant="34" id="gen-n9-j9X"/>
+                            <constraint firstItem="Lyg-yM-Oy7" firstAttribute="leading" secondItem="bbi-Go-oPi" secondAttribute="leading" id="kgB-w7-JFT"/>
+                            <constraint firstItem="C2Z-6M-RsY" firstAttribute="top" secondItem="nOM-8Y-mCR" secondAttribute="bottom" constant="10" id="mcq-kV-iCI"/>
+                            <constraint firstItem="x1I-VA-eEe" firstAttribute="height" secondItem="nOM-8Y-mCR" secondAttribute="height" id="oWQ-Eo-v87"/>
+                            <constraint firstItem="MW3-L0-lQg" firstAttribute="leading" secondItem="nOM-8Y-mCR" secondAttribute="trailing" constant="20" id="s6E-w2-jhl"/>
+                            <constraint firstItem="x1I-VA-eEe" firstAttribute="leading" secondItem="C2Z-6M-RsY" secondAttribute="trailing" constant="10" id="sdi-GP-CZD"/>
+                            <constraint firstItem="iMF-Dv-q3c" firstAttribute="centerX" secondItem="bbi-Go-oPi" secondAttribute="centerX" id="uSB-Y2-jEd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="幸运选号" id="U8z-nt-VA7"/>
+                    <connections>
+                        <outlet property="lightImageView" destination="iMF-Dv-q3c" id="YuP-12-s0G"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C3x-6V-pYL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="153" y="300"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="luck_entry_background" width="320" height="368"/>
+        <image name="luck_entry_birthday_button_normal" width="137" height="140"/>
+        <image name="luck_entry_lots_button_normal" width="153" height="152"/>
+        <image name="luck_entry_number_button_normal" width="130" height="139"/>
+        <image name="luck_entry_roulette_button_normal" width="140" height="144"/>
+        <image name="lucky_entry_light0" width="231" height="29"/>
+    </resources>
+</document>

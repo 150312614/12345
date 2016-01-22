@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<array>
+		<dict>
+			<key>icon</key>
+			<string>RedeemCode</string>
+			<key>name</key>
+			<string>使用兑换码</string>
+			<key>type</key>
+			<string>1</string>
+			<key>target</key>
+			<string>CZTestController</string>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>icon</key>
+			<string>RedeemCode</string>
+			<key>name</key>
+			<string>使用兑换码</string>
+			<key>type</key>
+			<string>1</string>
+			<key>target</key>
+			<string>CZTestController</string>
+		</dict>
+		<dict>
+			<key>icon</key>
+			<string>RedeemCode</string>
+			<key>name</key>
+			<string>使用兑换码</string>
+			<key>type</key>
+			<string>2</string>
+		</dict>
+		<dict>
+			<key>icon</key>
+			<string>RedeemCode</string>
+			<key>name</key>
+			<string>使用兑换码</string>
+			<key>type</key>
+			<string>2</string>
+		</dict>
+		<dict>
+			<key>icon</key>
+			<string>RedeemCode</string>
+			<key>name</key>
+			<string>使用兑换码</string>
+			<key>type</key>
+			<string>2</string>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>icon</key>
+			<string>RedeemCode</string>
+			<key>name</key>
+			<string>检测新版本</string>
+			<key>type</key>
+			<string>1</string>
+			<key>code</key>
+			<string>UIImage *image = [UIImage imageNamed:@&quot;RedButtonPressed&quot;];
+                
+                // 2. 拉伸图片要计算拉伸的点，只要这个点出了圆角的范围就可以
+                
+                NSInteger left = image.size.width * 0.5; // 系数值是从0-1
+                NSInteger top = image.size.height * 0.5;</string>
+		</dict>
+		<dict>
+			<key>icon</key>
+			<string>RedeemCode</string>
+			<key>name</key>
+			<string>使用兑换码</string>
+			<key>type</key>
+			<string>1</string>
+			<key>target</key>
+			<string>CZTestController</string>
+		</dict>
+		<dict>
+			<key>icon</key>
+			<string>RedeemCode</string>
+			<key>name</key>
+			<string>使用兑换码</string>
+			<key>type</key>
+			<string>1</string>
+			<key>target</key>
+			<string>CZTestController</string>
+		</dict>
+		<dict>
+			<key>icon</key>
+			<string>RedeemCode</string>
+			<key>name</key>
+			<string>使用兑换码</string>
+			<key>type</key>
+			<string>1</string>
+			<key>target</key>
+			<string>CZTestController</string>
+		</dict>
+		<dict>
+			<key>icon</key>
+			<string>RedeemCode</string>
+			<key>name</key>
+			<string>使用兑换码</string>
+			<key>type</key>
+			<string>1</string>
+			<key>target</key>
+			<string>CZTestController</string>
+		</dict>
+	</array>
+</array>
+</plist>

@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "42b26ac4-2158-6e4a-ad2d-49c73db4d32c",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "42b26ac4-2158-6e4a-ad2d-49c73db4d32c" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "42b26ac4-2158-6e4a-ad2d-49c73db4d32c" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "CD5C24B0-BB76-49C5-9CB9-53934FE47017",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "42b26ac4-2158-6e4a-ad2d-49c73db4d32c" : "lottery\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "01-网易彩票",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "01-网易彩票\/01-网易彩票.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/192.168.106.128\/svn\/lottery",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "42b26ac4-2158-6e4a-ad2d-49c73db4d32c"
+    }
+  ]
+}

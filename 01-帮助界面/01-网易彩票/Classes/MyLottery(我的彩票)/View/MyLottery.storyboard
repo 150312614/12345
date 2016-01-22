@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="HU7-hN-nIg">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Nav Controller-->
+        <scene sceneID="ThU-T4-2v3">
+            <objects>
+                <navigationController id="HU7-hN-nIg" customClass="CZNavController" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="s7X-Q5-bSf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Ndo-uv-8un" kind="relationship" relationship="rootViewController" id="yKa-oU-AVh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i3k-nQ-HRF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="266" y="-18"/>
+        </scene>
+        <!--我的彩票-->
+        <scene sceneID="UPf-ne-Aic">
+            <objects>
+                <viewController id="Ndo-uv-8un" customClass="CZMyLotteryController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sJP-4M-qO4"/>
+                        <viewControllerLayoutGuide type="bottom" id="TGT-eh-dGz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nL3-BI-9Ph">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="网易邮箱账号可以直接登录" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YWf-SM-46a">
+                                <rect key="frame" x="70" y="218" width="180" height="18"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="textColor" red="0.82745098039215681" green="0.40392156862745099" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qa3-1h-mur">
+                                <rect key="frame" x="20" y="244" width="280" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="LKg-PY-TA4"/>
+                                </constraints>
+                                <state key="normal" title="登  录" backgroundImage="RedButtonPressed"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L64-Wi-4jZ">
+                                <rect key="frame" x="20" y="309" width="280" height="35"/>
+                                <state key="normal" title="注  册" backgroundImage="login_button_register_normal"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJO-el-O1W">
+                                <rect key="frame" x="232" y="279" width="68" height="30"/>
+                                <state key="normal" title="忘记密码?"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoginScreen" translatesAutoresizingMaskIntoConstraints="NO" id="elP-2d-vkz">
+                                <rect key="frame" x="12" y="72" width="296" height="138"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Qa3-1h-mur" firstAttribute="top" secondItem="YWf-SM-46a" secondAttribute="bottom" constant="8" id="1mt-FO-w5r"/>
+                            <constraint firstItem="Qa3-1h-mur" firstAttribute="leading" secondItem="nL3-BI-9Ph" secondAttribute="leading" constant="20" id="2cR-6Z-vTZ"/>
+                            <constraint firstAttribute="trailing" secondItem="rJO-el-O1W" secondAttribute="trailing" constant="20" id="6wm-3d-BJh"/>
+                            <constraint firstItem="L64-Wi-4jZ" firstAttribute="height" secondItem="Qa3-1h-mur" secondAttribute="height" id="Ady-e3-PK0"/>
+                            <constraint firstItem="L64-Wi-4jZ" firstAttribute="top" secondItem="Qa3-1h-mur" secondAttribute="bottom" constant="30" id="HaS-Ox-2Ok"/>
+                            <constraint firstItem="YWf-SM-46a" firstAttribute="top" secondItem="elP-2d-vkz" secondAttribute="bottom" constant="8" id="MMB-aO-NPl"/>
+                            <constraint firstItem="YWf-SM-46a" firstAttribute="centerX" secondItem="nL3-BI-9Ph" secondAttribute="centerX" id="QkW-06-Y8x"/>
+                            <constraint firstAttribute="trailing" secondItem="Qa3-1h-mur" secondAttribute="trailing" constant="20" id="UWs-4A-Hng"/>
+                            <constraint firstItem="L64-Wi-4jZ" firstAttribute="leading" secondItem="Qa3-1h-mur" secondAttribute="leading" id="ZkP-Sr-IwZ"/>
+                            <constraint firstItem="L64-Wi-4jZ" firstAttribute="trailing" secondItem="Qa3-1h-mur" secondAttribute="trailing" id="lvi-zu-hcW"/>
+                            <constraint firstItem="elP-2d-vkz" firstAttribute="top" secondItem="sJP-4M-qO4" secondAttribute="bottom" constant="8" id="uDE-wa-jQx"/>
+                            <constraint firstItem="L64-Wi-4jZ" firstAttribute="top" secondItem="rJO-el-O1W" secondAttribute="bottom" id="vXg-N8-9IE"/>
+                            <constraint firstItem="elP-2d-vkz" firstAttribute="centerX" secondItem="nL3-BI-9Ph" secondAttribute="centerX" id="z0n-ka-1Pe"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="我的彩票" id="8b5-89-eR1">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="g8M-i9-DnJ">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hvK-bm-cXD">
+                                <rect key="frame" x="16" y="11" width="55" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="客服" image="FBMM_Barbutton"/>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="Mylottery_config" id="PVa-Ao-n5G">
+                            <connections>
+                                <segue destination="Q4j-PY-o5V" kind="push" id="6wO-le-pvL"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="loginBtn" destination="Qa3-1h-mur" id="Nz8-pj-8mT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UBv-tc-2EB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="664" y="-18"/>
+        </scene>
+        <!--设置-->
+        <scene sceneID="mGk-5r-daZ">
+            <objects>
+                <tableViewController id="Q4j-PY-o5V" customClass="CZSettingController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="owh-cM-Gia">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="qAK-PH-2uj" imageView="YjX-Bw-dKB" style="IBUITableViewCellStyleDefault" id="FK4-bz-rjp">
+                                <rect key="frame" x="0.0" y="113.5" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FK4-bz-rjp" id="DKV-hT-cbs">
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="使用兑换码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qAK-PH-2uj">
+                                            <rect key="frame" x="55" y="0.0" width="230" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="RedeemCode" id="YjX-Bw-dKB">
+                                            <rect key="frame" x="15" y="9" width="25" height="25"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="Q4j-PY-o5V" id="Vav-ed-EUQ"/>
+                            <outlet property="delegate" destination="Q4j-PY-o5V" id="wY5-Hn-ioX"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="设置" id="70L-Ob-QYD"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="adK-t6-XeT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1022" y="-18"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="FBMM_Barbutton" width="13" height="13"/>
+        <image name="LoginScreen" width="296" height="138"/>
+        <image name="Mylottery_config" width="22" height="22"/>
+        <image name="RedButtonPressed" width="61" height="34"/>
+        <image name="RedeemCode" width="25" height="25"/>
+        <image name="login_button_register_normal" width="275" height="38"/>
+    </resources>
+</document>
